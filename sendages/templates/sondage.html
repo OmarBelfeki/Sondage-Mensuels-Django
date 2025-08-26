@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sondage</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        @Mail <input type="text" name="mail"><br>
+        password <input type="text" name="password"><br>
+        Genre <select name="gener">
+        <option value="M">Masculin</option>
+        <option value="F">Feminin</option>
+    </select><br>
+        <h1>Les redeaux sociaux</h1><br>
+        <div>1</div>
+        <div></div>
+        <input type="radio" name="r1" value="O">
+        <input type="radio" name="r1" value="N">
+        <input type="radio" name="r1" value="S">
+        <br>
+        2
+        <div></div>
+        <input type="radio" name="r2" value="O">
+        <input type="radio" name="r2" value="N">
+        <input type="radio" name="r2" value="S">
+        <br>
+        2
+        <div></div>
+        <input type="radio" name="r3" value="O">
+        <input type="radio" name="r3" value="N">
+        <input type="radio" name="r3" value="S">
+        <br>
+
+        <button type="submit">particier</button>
+        <button type="reset">reste</button>
+    </form>
+</body>
+</html>
